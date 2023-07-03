@@ -47,7 +47,9 @@ BLM_CO_PLSS_Intersected_Survey_Grid.gdb
 
 A GDB is provided that contains the Colorado PLSS information used by the scripts.
 
-Source data can be found at https://gbp-blm-egis.hub.arcgis.com/search?categories=cadastral&groupIds=97bb25da078444d4a04669405f77643b or https://gis.blm.gov/coarcgis/rest/services/cadastral/BLM_CO_PLSS/MapServer/4.
+Source data can be found at: 
+- https://gbp-blm-egis.hub.arcgis.com/search?categories=cadastral&groupIds=97bb25da078444d4a04669405f77643b
+- https://gis.blm.gov/coarcgis/rest/services/cadastral/BLM_CO_PLSS/MapServer/4.
 
 -  ## **2.7**
 
