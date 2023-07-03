@@ -1,4 +1,5 @@
-# Legal_Description_to_Feature
+# **Legal Description (Excel) to GIS Feature Class (ArcGIS Pro)**
+
 Automation scripts transform tabular legal descriptions into dynamic GIS feature classes within ArcGIS Pro. Effortless plotting and enhanced geospatial analysis.
 
 Program Structure and Files
