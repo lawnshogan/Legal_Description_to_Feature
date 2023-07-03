@@ -13,37 +13,37 @@ Automation scripts transform tabular legal descriptions into dynamic GIS feature
 # 2. Scripts and Required Files
 -  ## **2.1**
 
-LegalDescriptionToolbox.pyt
+**LegalDescriptionToolbox.pyt**
 
 The Esri toolbox shell script for use in Pro. Basic required functionality, with the main execution a call to the legal_description_to_feature script.
 
 -  ## **2.2**
 
-legal_description_to_feature_v2.py
+**legal_description_to_feature_v2.py**
 
 This is the main module for the application. Code imports the Excel file data, does the comparision to the GIS Layer, retrieves the PLSS features (if needed), and updates the GIS Layer.
 
 -  ## **2.3**
 
-config.py
+**config.py**
 
 Configuration values used across the modules. See the comments in the file on what is required to configure the scripts for the local environment. Note that some values are only used if the scripts are run standalone versus running from the Pro Toolbox.
 
 -  ## **2.4**
 
-ld_parser.py
+**ld_parser.py**
 
 Functions related to the Legal Description parsing for the PLSS data.
 
 -  ## **2.5**
 
-ld_patterns.py
+**ld_patterns.py**
 
 This file contains the Python dictionary for mapping known PLSS 2nd Division to elements from the Legal Description. Keys/value pairs should be adjusted here (add/drop/change) to fine tune the pattern matching.
 
 -  ## **2.6**
 
-BLM_CO_PLSS_Intersected_Survey_Grid.gdb
+**BLM_CO_PLSS_Intersected_Survey_Grid.gdb**
 
 A GDB is provided that contains the Colorado PLSS information used by the scripts.
 
@@ -53,7 +53,7 @@ Source data can be found at:
 
 -  ## **2.7**
 
-Working GDB
+**Working GDB**
 
 A dedicated GDB for the lease processing is recommended, but not required. The scripts use a file GDB for processing of intermediate steps. Layers are created/deleted. 
 -  There are no special requirements for this GDB.
