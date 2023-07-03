@@ -2,7 +2,8 @@
 
 Automation scripts transform tabular legal descriptions into dynamic GIS feature classes within ArcGIS Pro. Effortless plotting and enhanced geospatial analysis.
 
-Program Structure and Files
+# **Program Structure and Files:**
+
 # 1. Definitions
 - 'Pro': ArcGIS Pro. Version 2.9 or greater required
 - 'Excel file': Lease data extract from NetSuite
