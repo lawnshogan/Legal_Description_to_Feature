@@ -19,3 +19,20 @@ it will move on to the next part of the script and create the polygon.
 - "BareTailPro' is the log program that you should download to read the log files. You can watch live as the script runs and see the audit, 
 so if something fails you can see where it failed in the script. The PLSS_Audit_Records.csv file is created at the end of the script and is not live.
 
+
+
+EXCEL_INPUT = r'D:\Projects\CSLB\data\GIS_Lease_Update_big_test.xlsx'
+- Netsuite excel spreadsheet
+WORKING_GDB = r'D:\ArcGIS_Projects\CSLB-LegalDesc\CSLB-LegalDesc.gdb'
+- Monthly Lease Update.gdb
+GIS_LAYER = r'D:\ArcGIS_Projects\CSLB-LegalDesc\CSLB-LegalDesc.gdb\SLB_Lease_SchemaFC'
+- Lease Feature Class within Monthly Lease Update.gdb
+REPORT_FOLDER = r'D:\Projects\CSLB\temp'
+- PLSS Audit .csv file
+
+
+Running Stand-Alone Script:
+1. File paths in 'config.py' and 'legal_description_to_feature_v2.py' scripts must be fulfilled. (No need to if ran in ArcGIS Pro)
+2. Clone a python environment from ArGIS Pro and connect to this (no need to download dependencies once this is conected)
+3. Must have the approriate ArcGIS Licenses
+4. ArcGIS Pro Project must be closed when running script - Schema locks will fail the script.
