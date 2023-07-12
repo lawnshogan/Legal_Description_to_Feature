@@ -27,7 +27,7 @@ class LegalDescriptionToFeature(object):
         excelFile = arcpy.Parameter(
             displayName="Excel file input",
             name="excelFile",
-            datatype="GPDataFile",
+            datatype="DEFile",
             parameterType="Required",
             direction="Input")
 
