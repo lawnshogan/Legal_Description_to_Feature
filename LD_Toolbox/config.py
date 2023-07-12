@@ -7,7 +7,8 @@ environment
 PLSS = r'D:\ArcGIS_Projects\CSLB-LegalDesc\BLM_CO_PLSS_Intersected_Survey_Grid.gdb\BLM_Colorado_PLSS_Intersected___Survey_Grid'
 
 # Setup for the log file and audit file
-LOG_FILE_FOLDER = r'D:\Projects\CSLB\logs'
+# Original - LOG_FILE_FOLDER = r'D:\Projects\CSLB\logs'
+LOG_FILE_FOLDER = r'C:\Users\logans1\Legal_Description_to_Feature\logs'
 LOG_FILE_NAME = 'Lease_Updates'
 AUDIT_FILE_NAME = 'PLSS_Audit_Records'
 
