@@ -23,10 +23,13 @@ so if something fails you can see where it failed in the script. The PLSS_Audit_
 
 EXCEL_INPUT = r'D:\Projects\CSLB\data\GIS_Lease_Update_big_test.xlsx'
 - Netsuite excel spreadsheet
+
 WORKING_GDB = r'D:\ArcGIS_Projects\CSLB-LegalDesc\CSLB-LegalDesc.gdb'
 - Monthly Lease Update.gdb
+
 GIS_LAYER = r'D:\ArcGIS_Projects\CSLB-LegalDesc\CSLB-LegalDesc.gdb\SLB_Lease_SchemaFC'
 - Lease Feature Class within Monthly Lease Update.gdb
+
 REPORT_FOLDER = r'D:\Projects\CSLB\temp'
 - PLSS Audit .csv file
 
