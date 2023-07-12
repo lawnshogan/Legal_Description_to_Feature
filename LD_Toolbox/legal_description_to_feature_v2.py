@@ -22,10 +22,14 @@ import ld_parser
 IS_GCS_DEV = True
 
 if IS_GCS_DEV:
-    EXCEL_INPUT = r'D:\Projects\CSLB\data\GIS_Lease_Update_big_test.xlsx'
-    WORKING_GDB = r'D:\ArcGIS_Projects\CSLB-LegalDesc\CSLB-LegalDesc.gdb'
-    GIS_LAYER = r'D:\ArcGIS_Projects\CSLB-LegalDesc\CSLB-LegalDesc.gdb\SLB_Lease_SchemaFC'
-    REPORT_FOLDER = r'D:\Projects\CSLB\temp'
+    # Original - EXCEL_INPUT = r'D:\Projects\CSLB\data\GIS_Lease_Update_big_test.xlsx'
+    # Original - WORKING_GDB = r'D:\ArcGIS_Projects\CSLB-LegalDesc\CSLB-LegalDesc.gdb'
+    # Original - GIS_LAYER = r'D:\ArcGIS_Projects\CSLB-LegalDesc\CSLB-LegalDesc.gdb\SLB_Lease_SchemaFC'
+    # Original - REPORT_FOLDER = r'D:\Projects\CSLB\temp'
+    EXCEL_INPUT = r'C:\Users\logans1\Legal_Description_to_Feature\Netsuite_Active_Leases'
+    WORKING_GDB = r'C:\Users\logans1\Legal_Description_to_Feature\Monthly Lease Update.gdb'
+    GIS_LAYER = r'C:\Users\logans1\Legal_Description_to_Feature\Monthly Lease Update.gdb\Sample_Test_7_3_2023'
+    REPORT_FOLDER = r'C:\Users\logans1\Legal_Description_to_Feature\temp'
 
 FIRST_DIV = 'First_Div'
 SECOND_DIV = 'Second_Div'
