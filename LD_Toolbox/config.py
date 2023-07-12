@@ -4,7 +4,7 @@ environment
 '''
 #<<<<<<<<<<<<<<< Environment specific required values  >>>>>>>>>>>>>>>
 # Enter the full path to the PLSS feature class being used.
-PLSS = r'D:\ArcGIS_Projects\CSLB-LegalDesc\BLM_CO_PLSS_Intersected_Survey_Grid.gdb\BLM_Colorado_PLSS_Intersected___Survey_Grid'
+PLSS = r'C:\Users\logans1\Legal_Description_to_Feature\BLM_CO_PLSS_Intersected_Survey_Grid.gdb\BLM_Colorado_PLSS_Intersected___Survey_Grid'
 
 # Setup for the log file and audit file
 # Original - LOG_FILE_FOLDER = r'D:\Projects\CSLB\logs'
