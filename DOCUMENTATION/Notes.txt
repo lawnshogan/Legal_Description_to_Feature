@@ -14,3 +14,8 @@ to change the schema as long as this script matches the field names within the L
 This parse is based on the Lease Transaction Number field. If it does not find a Transaction Number that is within the excel spreadsheet, but not in the Lease Layer,
 it will move on to the next part of the script and create the polygon.
 
+'logs' & 'temp' folder - Log files contain a date/time stamp so you know when the script is ran.
+- The PLSS_Audit_Records.csv in the 'temp' folder mirror the PLSS_Audit_Records log in the 'log' folder.
+- "BareTailPro' is the log program that you should download to read the log files. You can watch live as the script runs and see the audit, 
+so if something fails you can see where it failed in the script. The PLSS_Audit_Records.csv file is created at the end of the script and is not live.
+
