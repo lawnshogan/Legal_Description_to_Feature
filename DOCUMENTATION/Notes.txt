@@ -36,3 +36,7 @@ Running Stand-Alone Script:
 2. Clone a python environment from ArGIS Pro and connect to this (no need to download dependencies once this is conected)
 3. Must have the approriate ArcGIS Licenses
 4. ArcGIS Pro Project must be closed when running script - Schema locks will fail the script.
+
+PLSS_Audit_Records .csv file - This will find the errors from the script of attributes that failed to update for various reasons.
+When the script is finished, this file will be created. Make edits on this file and then also adjust the records within Netsuite. After
+updating this file, run the script again using this file (delete the error column before running) instead of the excel you pull from netsuite and your data will be ready.
