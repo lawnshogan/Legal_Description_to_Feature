@@ -1,0 +1,16 @@
+Script can be run in ArcGIS Pro via 'LegalDescriptionToolbox' or run legal_description_to_feature_v2.py as a stand-alone script in VSCode.
+
+
+LD_Toolbox folder - Contains the toolbox scripts
+ - All the scripts in this folder need to be within the same folder
+
+
+Monthly Lease Update.gdb - Contains the GIS Lease Layer you will be targeting. 
+- In the documentation and scripts, this lease layer is refered to as the 'GIS Layer'
+- Schema of this Lease Layer must match what is within the 'config.py' script. If it is not matching the script will fail. It is ok
+to change the schema as long as this script matches the field names within the Lease Layer.
+
+- The script first parses through the attributes within the GIS Lease Layer and updates them based on the excel spreadsheet you pull from Netsuite.
+This parse is based on the Lease Transaction Number field. If it does not find a Transaction Number that is within the excel spreadsheet, but not in the Lease Layer,
+it will move on to the next part of the script and create the polygon.
+
