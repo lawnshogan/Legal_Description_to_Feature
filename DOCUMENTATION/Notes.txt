@@ -33,6 +33,7 @@ REPORT_FOLDER = r'D:\Projects\CSLB\temp'
 
 Running Stand-Alone Script:
 1. File paths in 'config.py' and 'legal_description_to_feature_v2.py' scripts must be fulfilled. (No need to if ran in ArcGIS Pro)
+- Main script to run is 'legal_description_to_feature_v2.py'
 2. Clone a python environment from ArGIS Pro and connect to this (no need to download dependencies once this is conected)
 3. Must have the approriate ArcGIS Licenses
 4. ArcGIS Pro Project must be closed when running script - Schema locks will fail the script.
