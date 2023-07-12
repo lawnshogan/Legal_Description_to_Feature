@@ -25,21 +25,21 @@ class LegalDescriptionToFeature(object):
         """Define parameter definitions"""
 
         excelFile = arcpy.Parameter(
-            displayName="Excel file input",
+            displayName="Netsuite Excel File Input",
             name="excelFile",
             datatype="DEFile",
             parameterType="Required",
             direction="Input")
 
         gisLayer = arcpy.Parameter(
-            displayName="GIS Layer to be updated",
+            displayName="GIS Layer to Update (SLB Leases)",
             name="gisLayer",
             datatype="DEFeatureClass",
             parameterType="Required",
             direction="Input")
 
         outputFolder = arcpy.Parameter(
-            displayName="Folder to output reports and logs",
+            displayName="Folder to Output Audit File",
             name="outputFolder",
             datatype="DEFolder",
             parameterType="Required",
