@@ -39,7 +39,7 @@ class LegalDescriptionToFeature(object):
             direction="Input")
 
         outputFolder = arcpy.Parameter(
-            displayName="Folder to Output Audit File",
+            displayName="Folder to Output .csv Audit File",
             name="outputFolder",
             datatype="DEFolder",
             parameterType="Required",
