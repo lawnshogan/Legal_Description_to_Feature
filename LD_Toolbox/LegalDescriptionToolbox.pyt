@@ -25,27 +25,27 @@ class LegalDescriptionToFeature(object):
         """Define parameter definitions"""
 
         excelFile = arcpy.Parameter(
-            displayName="Netsuite Excel File Input",
+            displayName="Excel file input",
             name="excelFile",
             datatype="DEFile",
             parameterType="Required",
             direction="Input")
 
         gisLayer = arcpy.Parameter(
-            displayName="GIS Layer to Update (SLB Leases)",
+            displayName="GIS Layer to be updated",
             name="gisLayer",
-            datatype="DEFeatureClass",
+            datatype='DEFeatureClass',
             parameterType="Required",
             direction="Input")
+        gisLayer.filter.list = ["Polygon"]
 
         outputFolder = arcpy.Parameter(
-            displayName="Folder to Output .csv Audit File",
+            displayName="Folder to output reports and logs",
             name="outputFolder",
             datatype="DEFolder",
             parameterType="Required",
             direction="Input")
 
-        # return [excelFile, outputFileLoc, outputFile, dateTag, outputFolder]
         return [excelFile, gisLayer, outputFolder]
 
     def isLicensed(self):
@@ -69,9 +69,9 @@ class LegalDescriptionToFeature(object):
         arcpy.AddMessage('Importing modules for the tool')
         import legal_description_to_feature_v2 as tool_script
 
-        excelFile = arcpy.GetParameterAsText(0)
-        gisLayer = arcpy.GetParameterAsText(1)
-        outputFolder = arcpy.GetParameterAsText(2)
+        excelFile = parameters[0].valueAsText
+        gisLayer = parameters[1].value
+        outputFolder = parameters[2].valueAsText
 
         gdb = arcpy.env.workspace
 

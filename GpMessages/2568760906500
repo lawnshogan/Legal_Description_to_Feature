@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Thursday, July 13, 2023 8:49:19 AM</msg><msg code="0" type="0">Importing modules for the tool</msg><msg code="0" type="0">Getting excel data</msg><msg code="0" type="0">Checking the Excel data for errors</msg><msg code="0" type="0">0 records removed from the Excel data. See error file.</msg><msg code="0" type="0">Checking for updates and adds to GIS layer</msg><msg code="1" type="100">Traceback (most recent call last):
+  File "&lt;string&gt;", line 78, in execute
+  File "C:\Users\logans1\Legal_Description_to_Feature\LD_Toolbox\legal_description_to_feature_v2.py", line 636, in main
+    gis_lyr_keys = set(row[0] for row in arcpy.da.SearchCursor(gis_layer, cfg.FIELD_MAPPING[cfg.DISSOLVE_FIELD]))
+  File "C:\Users\logans1\Legal_Description_to_Feature\LD_Toolbox\legal_description_to_feature_v2.py", line 636, in &lt;genexpr&gt;
+    gis_lyr_keys = set(row[0] for row in arcpy.da.SearchCursor(gis_layer, cfg.FIELD_MAPPING[cfg.DISSOLVE_FIELD]))
+RuntimeError: Cannot find field 'Transact_1'
+</msg><msg code="-2147467259" type="100">Failed to execute (LegalDescriptionToFeature).</msg><msg code="0" type="3">Failed at Thursday, July 13, 2023 8:49:31 AM (Elapsed Time: 12.05 seconds)</msg></messages>

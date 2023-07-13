@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Thursday, July 13, 2023 8:54:03 AM</msg><msg code="0" type="0">Importing modules for the tool</msg><msg code="0" type="0">Getting excel data</msg><msg code="0" type="0">Checking the Excel data for errors</msg><msg code="0" type="0">0 records removed from the Excel data. See error file.</msg><msg code="0" type="0">Checking for updates and adds to GIS layer</msg><msg code="0" type="0">Processing updates...</msg><msg code="0" type="0">Applying updates against GIS data</msg><msg code="1" type="100">Traceback (most recent call last):
+  File "&lt;string&gt;", line 78, in execute
+  File "C:\Users\logans1\Legal_Description_to_Feature\LD_Toolbox\legal_description_to_feature_v2.py", line 659, in main
+    for gis_row in update_cursor:
+RuntimeError: Cannot find field 'Lease_End_'
+</msg><msg code="-2147467259" type="100">Failed to execute (LegalDescriptionToFeature).</msg><msg code="0" type="3">Failed at Thursday, July 13, 2023 8:54:04 AM (Elapsed Time: 1.65 seconds)</msg></messages>
