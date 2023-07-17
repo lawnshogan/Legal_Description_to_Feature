@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Monday, July 17, 2023 8:55:56 AM</msg><msg code="0" type="0">Importing modules for the tool</msg><msg code="0" type="0">Getting excel data</msg><msg code="0" type="0">Checking the Excel data for errors</msg><msg code="0" type="0">0 records removed from the Excel data. See error file.</msg><msg code="0" type="0">Checking for updates and adds to GIS layer</msg><msg code="0" type="0">Processing updates...</msg><msg code="0" type="0">Applying updates against GIS data</msg><msg code="0" type="0">32 records updated in GIS layer</msg><msg code="0" type="0">Processing new additions...</msg><msg code="0" type="0">0 errors found in First Division check</msg><msg code="0" type="0">0 errors found in Second Division check</msg><msg code="0" type="0">2 records with audit data to review in Second Division check</msg><msg code="0" type="0">Getting PLSS features for the additional records</msg><msg code="0" type="0">180 to check for PLSS</msg><msg code="1" type="100">Traceback (most recent call last):
+  File "&lt;string&gt;", line 78, in execute
+  File "C:\Users\logans1\Legal_Description_to_Feature\LD_Toolbox\legal_description_to_feature_v2.py", line 703, in main
+    plss_features_lyr, error_records = get_plss_features(plss_features_lyr_name,
+  File "C:\Users\logans1\Legal_Description_to_Feature\LD_Toolbox\legal_description_to_feature_v2.py", line 488, in get_plss_features
+    new_row = [data_record[reverse_lookup[field]] for field in insert_fields[:-1]] # trap for missing key?
+  File "C:\Users\logans1\Legal_Description_to_Feature\LD_Toolbox\legal_description_to_feature_v2.py", line 488, in &lt;listcomp&gt;
+    new_row = [data_record[reverse_lookup[field]] for field in insert_fields[:-1]] # trap for missing key?
+KeyError: 'Lease Status'
+</msg><msg code="-2147467259" type="100">Failed to execute (LegalDescriptionToFeature).</msg><msg code="0" type="3">Failed at Monday, July 17, 2023 8:56:09 AM (Elapsed Time: 13.48 seconds)</msg></messages>
