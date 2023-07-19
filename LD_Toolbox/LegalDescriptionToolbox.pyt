@@ -25,14 +25,14 @@ class LegalDescriptionToFeature(object):
         """Define parameter definitions"""
 
         excelFile = arcpy.Parameter(
-            displayName="Excel file input",
+            displayName="Netsuite Active Leases (Excel File Input)",
             name="excelFile",
             datatype="DEFile",
             parameterType="Required",
             direction="Input")
 
         gisLayer = arcpy.Parameter(
-            displayName="GIS Layer to be updated",
+            displayName="Master Lease GIS Layer to be updated",
             name="gisLayer",
             datatype='DEFeatureClass',
             parameterType="Required",
@@ -40,7 +40,7 @@ class LegalDescriptionToFeature(object):
         gisLayer.filter.list = ["Polygon"]
 
         outputFolder = arcpy.Parameter(
-            displayName="Folder to output reports and logs",
+            displayName="'Temp' Folder (Output Reports and Logs)",
             name="outputFolder",
             datatype="DEFolder",
             parameterType="Required",
