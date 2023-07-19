@@ -172,14 +172,14 @@ def insert_new_data(target_lyr:str, source_feature_lyr:str, source_data:dict) ->
     Merges the data from the PLSS dissolve layer current gis layer data
     '''
     # Hard setting the Transactio field in the gis layer
-    insert_fields = ['Transactio']
+    insert_fields = [] #['Transactio'] #<< Dropping the field
     insert_fields.extend(list(cfg.FIELD_MAPPING.values()))
     insert_fields.append('SHAPE@')
 
     with arcpy.da.InsertCursor(target_lyr, insert_fields) as insert_cursor:
         for key, data_values in source_data.items():
             # Hard setting the Transactio field in the gis layer
-            insert_row = ['Lease']
+            insert_row = [] # ['Lease'] #<< Dropping the default value
             insert_row.extend(data_values[:])
             query = f"{cfg.FIELD_MAPPING[cfg.DISSOLVE_FIELD]} = '{key}'"
             with arcpy.da.SearchCursor(source_feature_lyr, 'SHAPE@', query) as source_cursor:
